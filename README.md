@@ -4,7 +4,7 @@ Parkinson's Disease Prediction Web Application
 
 An intuitive and efficient web application that predicts the likelihood of Parkinson's Disease using biomedical voice measurements. This machine learning tool supports early detection efforts and educational purposes.
 <p align="center">
-  <img src="img1.png" alt="Screenshot of the Parkinson Prediction WebApp" width="600"/>
+  <img src="images\img1.png" alt="Screenshot of the Parkinson Prediction WebApp" width="600"/>
 </p>
 
 ---
@@ -17,7 +17,7 @@ High accuracy and fast inference powered by scikit-learn.
 Simple, clean user interface built with Flask and HTML.
 
 <p align="center">
-  <img src="img2.png" alt="Screenshot of the Parkinson Prediction WebApp" width="600"/>
+  <img src="images\img2.png" alt="Screenshot of the Parkinson Prediction WebApp" width="600"/>
 </p>
 ---
 
