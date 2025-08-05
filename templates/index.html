@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px; /* Adjusted for fewer inputs */
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex; /* Changed to flex for single column layout */
+            flex-direction: column;
+            gap: 15px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        button {
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .info-text {
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Parkinson's Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="PPE">PPE</label>
+                <input type="text" id="PPE" name="PPE" required placeholder="e.g., 0.22">
+            </div>
+            <div class="form-group">
+                <label for="spread1">Spread1</label>
+                <input type="text" id="spread1" name="spread1" required placeholder="e.g., -5.49">
+            </div>
+            <div class="form-group">
+                <label for="spread2">Spread2</label>
+                <input type="text" id="spread2" name="spread2" required placeholder="e.g., 0.28">
+            </div>
+            <div class="form-group">
+                <label for="MDVP:Fo(Hz)">MDVP:Fo(Hz)</label>
+                <input type="text" id="MDVP:Fo(Hz)" name="MDVP:Fo(Hz)" required placeholder="e.g., 119.99">
+            </div>
+            
+            <button type="submit">Predict</button>
+        </form>
+        <p class="info-text">Enter the 4 key speech features for prediction.</p>
+    </div>
+</body>
+</html>
